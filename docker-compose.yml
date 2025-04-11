@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  # Backend PHP
+  backend:
+    build: ./back # path to backend Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - ./back:/var/www/html
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DB=mydb
+
+  # Base de datos MySQL
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydb
+    volumes:
+      - db_data:/var/lib/mysql
+
+  # Frontend React + TypeScript
+  frontend:
+    build:
+      context: ./front 
+    ports:
+      - "3000:80"
+    volumes:
+      - ./front:/app  # by changes in real time
+
+volumes:
+  db_data:
