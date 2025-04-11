@@ -1,9 +1,3 @@
-Perfect! Here's the full version of the README introduction in English, professional and ambitious, tailored to show off your skills and readiness for real-world projects.
-
----
-
-## 🚀 Academic Management System — Clean Architecture & Full Stack
-
 This project is an advanced **Full Stack web application** implementing an **Academic Management System**, designed to showcase strong software engineering practices, including:
 
 - ✅ **Clean Architecture**
@@ -84,7 +78,3 @@ The system manages the core entities of an academic environment. It's designed a
 ## 🎯 Goal
 
 This project is not just a practice in PHP — it is a real demonstration of scalable, maintainable, and professional software architecture. It’s designed to be easily extended and adapted to new requirements. It can serve as the base for a complete academic platform or any large-scale CRUD system.
-
----
-
-Let me know if you want a **project roadmap**, **architecture diagram**, or a **task list (Kanban-style)** for your GitHub too!
